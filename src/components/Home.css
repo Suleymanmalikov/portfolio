@@ -1,64 +1,69 @@
-/* src/components/Home.css */
-/* @keyframes gradientAnimation {
-  0% {
-    background-position: 0% 0%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 0%;
-  }
-} */
-
 .home {
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background-color: black;
-  color: #000;
-  text-align: center;
-  padding: 0 1rem; */
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  background: linear-gradient(45deg, var(--primary), var(--secondary));
-  background-size: 600% 100%;
-  animation: gradientAnimation 10s ease infinite;
-  color: #fff;
-  text-align: center; */
-
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   text-align: center;
 }
 
-.home-title {
-  font-size: 3rem;
-  margin: 0;
+.container {
+  display: inline-block;
 }
 
-.home-subtitle {
+.home p {
+  text-align: left;
+  font-size: 2rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.home h1.name {
+  padding: 20px 0;
+  font-size: 3.5rem;
+  color: var(--yellow);
+  border-right: 5px solid var(--yellow);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s infinite, cursor 0.4s step-end infinite alternate;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typing animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.home .container .job {
   font-size: 1.5rem;
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  text-align: left;
+  font-weight: 400;
+}
+.home .container .job span {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
-.cta-button {
-  padding: 0.75rem 1.5rem;
-  background: #007bff;
-  color: #000;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  transition: background 0.3s ease;
+/* Icons */
+.home .container .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 4rem;
+  list-style: none;
+  font-size: 1.5rem;
 }
-
-.cta-button:hover {
-  background: #0056b3;
+.home .container .icons a:hover {
+  color: var(--yellow);
+  transition: color 0.3s ease;
 }

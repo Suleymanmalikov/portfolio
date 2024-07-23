@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 html {
-  scroll-behavior: smooth; /* Applies smooth scrolling for anchor links */
+  scroll-behavior: smooth;
 }
 a {
   color: #fff;
@@ -16,9 +16,12 @@ a {
   scroll-behavior: smooth;
 }
 :root {
-  --background-1: #343d46;
+  --background-1: #444;
+  /* --background-1: #03396c; */
+  /* --background-1: #343d46; */
   --background-2: #222;
-  --background-3: #444;
+  --background-3: #006666;
+  --yellow: #f1c40f;
 }
 
 /* Background animation */
