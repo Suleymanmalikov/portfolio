@@ -1,0 +1,64 @@
+/* src/components/Home.css */
+/* @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+} */
+
+.home {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+  color: #000;
+  text-align: center;
+  padding: 0 1rem; */
+
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  background-size: 600% 100%;
+  animation: gradientAnimation 10s ease infinite;
+  color: #fff;
+  text-align: center; */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.home-subtitle {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  padding: 0.75rem 1.5rem;
+  background: #007bff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #0056b3;
+}

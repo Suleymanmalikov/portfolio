@@ -1,38 +1,40 @@
+/* src/components/Navbar.css */
 .navbar {
-  background-color: var(--secondary);
-  padding: 10px;
+  padding: 0.8rem 2rem;
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  width: fit-content;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.navbar:hover {
+  background-color: #111;
+  transition: background 0.3s ease;
+}
+
+.container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  /* max-width: 1200px; */
+  padding: 0 2rem;
 }
 
-.navbar h1 {
-  color: var(--accent);
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-left: 20px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.links {
+.nav-links {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  margin-left: auto;
-  width: 30%;
+  gap: 3rem;
 }
-.links a {
-  color: var(--accent);
-  text-decoration: none;
-  padding: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  text-transform: uppercase;
+
+.nav-links a {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.2rem;
 }
-.links a:hover {
-  background-color: var(--accent);
-  border-radius: 7px;
-  color: var(--secondary);
-  transition: color 0.3s ease;
+
+.nav-links a:hover {
+  border-bottom: 2px solid #fff;
 }
