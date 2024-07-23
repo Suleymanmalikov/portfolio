@@ -12,7 +12,6 @@ function App() {
       <Home />
       <Projects />
       <About />
-      <Analytics />
     </div>
   );
 }
