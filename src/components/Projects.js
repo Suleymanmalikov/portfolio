@@ -55,8 +55,15 @@ const Projects = () => {
           <div>
             <ul>
               <li>
-                Utilized the TED-Talk API to create a TED-Talk Aggregator,
-                organizing talks into sections for user convenience.
+                Utilized the{" "}
+                <a
+                  href="https://github.com/Yakup3/ted-talk-api"
+                  target="_blank"
+                >
+                  TED-Talk API
+                </a>{" "}
+                to create a TED-Talk Aggregator, organizing talks into sections
+                for user convenience.
               </li>
               <li>
                 Boasts a professional UI design, prioritizing ease of navigation
@@ -78,7 +85,7 @@ const Projects = () => {
         <FaReact className="icon" />,
         <RiNextjsLine className="icon" />,
       ],
-      link: "https://github.com/yourusername/project-two",
+      link: "https://github.com/Suleymanmalikov/TED-Talks",
     },
   ];
 

@@ -57,3 +57,14 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/* pseudo-element */
+::selection {
+  background: var(--yellow);
+  color: black;
+}
+
+::-moz-selection {
+  background: var(--yellow);
+  color: black;
+}
