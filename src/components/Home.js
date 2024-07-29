@@ -14,7 +14,6 @@ const Home = () => {
         <h1 className="name">Suleymanguly Malikov.</h1>
         <h2 className="job">
           I am a <span>Front-end Developer</span> with a passion for creating
-          <br />
           interactive and dynamic web applications.
         </h2>
         <ul className="icons">

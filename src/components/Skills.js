@@ -17,7 +17,7 @@ import {
   SiMysql,
   SiSpring,
 } from "react-icons/si";
-import "../components/Skills.css";
+import "./Skills.css";
 
 const Skills = () => {
   return (

@@ -1,3 +1,75 @@
+@media (min-width: 0) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4%;
+    height: 100vh;
+    text-align: center;
+  }
+  .home .container {
+    display: inline-block;
+  }
+  .home p {
+    text-align: left;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 700;
+  }
+  .home h1.name {
+    margin: 1rem 0;
+    font-size: 2.2rem;
+    color: var(--yellow);
+    border-right: 5px solid var(--yellow);
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 4s infinite, cursor 0.4s step-end infinite alternate;
+  }
+  /* cursor blinking */
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  /* typing animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 24.5rem;
+    }
+  }
+
+  .home .container .job {
+    max-width: 40rem;
+    font-size: 1.5rem;
+    text-align: left;
+    font-weight: 400;
+  }
+  .home .container .job span {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+
+  /* Icons */
+  .home .container .icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 4rem;
+    list-style: none;
+    font-size: 1.5rem;
+  }
+  .home .container .icons a:hover {
+    color: var(--yellow);
+    transition: color 0.3s ease;
+  }
+}
+
+/*
 .home {
   display: flex;
   flex-direction: column;
@@ -27,17 +99,17 @@
   white-space: nowrap;
   overflow: hidden;
   animation: typing 4s infinite, cursor 0.4s step-end infinite alternate;
-}
+} */
 
 /* cursor blinking */
-@keyframes cursor {
+/* @keyframes cursor {
   50% {
     border-color: transparent;
   }
-}
+} */
 
 /* typing animation */
-@keyframes typing {
+/* @keyframes typing {
   from {
     width: 0;
   }
@@ -51,10 +123,10 @@
 .home .container .job span {
   text-decoration: underline;
   font-weight: 700;
-}
+} */
 
 /* Icons */
-.home .container .icons {
+/* .home .container .icons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,4 +138,4 @@
 .home .container .icons a:hover {
   color: var(--yellow);
   transition: color 0.3s ease;
-}
+} */
