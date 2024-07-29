@@ -19,7 +19,7 @@
   }
   .home h1.name {
     margin: 1rem 0;
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: var(--yellow);
     border-right: 5px solid var(--yellow);
     width: 100%;
