@@ -9,9 +9,53 @@ import {
   FaJava,
 } from "react-icons/fa";
 import { RiNextjsLine } from "react-icons/ri";
+import {
+  SiXstate,
+  SiStyledcomponents,
+  SiJest,
+  SiTestinglibrary,
+} from "react-icons/si";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Tic Tac Toe",
+      description: () => {
+        return (
+          <div>
+            <ul>
+              <li>
+                <strong>Development:</strong> Created a front-end web
+                application using React for playing Tic-Tac-Toe, featuring board
+                size selection (3x3 or 4x4) and game modes against AI or another
+                player.
+              </li>
+              <li>
+                <strong>Features:</strong> Implemented a dynamic game board that
+                updates with each move, detects game outcomes (win, draw,
+                ongoing), and includes a reset button
+              </li>
+              <li>
+                <strong>Technologies:</strong> Utilized XState for state
+                management, Styled Components for a clean, responsive UI, and
+                conducted unit testing with Jest and React Testing Library to
+                ensure functionality and reliability
+              </li>
+            </ul>
+          </div>
+        );
+      },
+      technologies: [
+        <FaHtml5 className="icon" />,
+        <FaJs className="icon" />,
+        <FaReact className="icon" />,
+        <SiXstate className="icon" />,
+        <SiStyledcomponents className="icon" />,
+        <SiJest className="icon" />,
+        <SiTestinglibrary className="icon" />,
+      ],
+      link: "https://github.com/Suleymanmalikov/tic-tac-toe",
+    },
     {
       title: "Student-Management-System",
       description: () => {
