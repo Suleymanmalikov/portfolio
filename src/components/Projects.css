@@ -4,7 +4,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
     z-index: 0;
   }
   .projects .section-title {
@@ -13,7 +12,9 @@
   }
 
   .projects .projects-list {
-    /* align-items: center; */
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
     text-align: left;
   }
   .project-card {
@@ -78,7 +79,6 @@
     height: 26rem;
   }
   .projects .projects-list {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
