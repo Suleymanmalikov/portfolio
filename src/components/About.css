@@ -34,7 +34,7 @@
     color: var(--yellow);
     transition: color 0.3s ease-in-out;
   }
-  .para p {
+  .para h3 {
     /* padding: 0.4rem 0; */
     text-align: left;
     font-size: 1.1rem;
