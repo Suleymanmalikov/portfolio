@@ -11,6 +11,9 @@ const Home = () => {
     <div className="home" id="home">
       <div className="container">
         <p>Hi there, I'm</p>
+        <h1 style={{ display: "none" }}>
+          Suleymanguly Malikov | Applied CS Student & Front-End Developer
+        </h1>
         <h1 className="name">Suleymanguly Malikov.</h1>
         <h2 className="job">
           I am a <span>Front-end Developer</span> with a passion for creating
